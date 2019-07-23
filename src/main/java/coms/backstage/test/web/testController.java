@@ -23,20 +23,6 @@ public class testController {
     public String ems(Map<String,Object> map){
         List<Map<String, Object>> kill = te.testselectuser("店长");
         System.out.println(kill.toString());
-        List<String> warnings = new ArrayList<String>();
-        boolean overwrite = true;
-        // 指定配置文件
-        try {
-            File configFile = new File("D:\\idea\\idea\\IMS\\src\\main\\Resources\\mnb.xml");
-            ConfigurationParser cp = new ConfigurationParser(warnings);
-            Configuration config = cp.parseConfiguration(configFile);
-            DefaultShellCallback callback = new DefaultShellCallback(overwrite);
-            MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-            myBatisGenerator.generate(null);
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
         map.put("user",kill);
         return "test";
     };
