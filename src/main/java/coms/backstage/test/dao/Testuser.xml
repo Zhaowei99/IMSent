@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 配置SQL语句，与实体类的操作关系 -->
+<mapper namespace="coms.backstage.test.dao.Testuser">
+
+    <select id="testselectuser" resultType="map">
+        select * from bis_shop_user where username=#{username}
+    </select>
+</mapper>
