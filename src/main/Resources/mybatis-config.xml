@@ -7,7 +7,6 @@
     <settings>
         <!--<setting name="mapUnderscoreToCameCase" value="true"/>-->
         <!--<setting name="jdbcTypeForNull" value="null"/>-->
-        
         <setting name="cacheEnabled" value="true"></setting>
         <setting name="lazyLoadingEnabled" value="true"></setting>
         <setting name="aggressiveLazyLoading" value="true"></setting>

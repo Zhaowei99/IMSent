@@ -5,5 +5,5 @@ import java.util.Map;
 
 public interface Testuser {
 
-    public List<Map<String,Object>> testselectuser(String username);
+    public List<Map<String,Object>> testselectuser();
  }

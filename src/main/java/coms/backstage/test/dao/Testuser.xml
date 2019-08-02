@@ -6,6 +6,6 @@
 <mapper namespace="coms.backstage.test.dao.Testuser">
 
     <select id="testselectuser" resultType="map">
-        select * from bis_shop_user where username=#{username}
+        select * from  bis_bag_project
     </select>
 </mapper>
